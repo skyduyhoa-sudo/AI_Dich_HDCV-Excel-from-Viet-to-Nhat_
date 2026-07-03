@@ -16,7 +16,11 @@ dist/*
 *.toc
 *.manifest
 *.spec
-!Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.spec
+
+# Local developer helper files, not needed on Vercel
+requirements.txt
+install_requirements.bat
+run_app.bat
 
 # Local secrets and runtime config
 .env
