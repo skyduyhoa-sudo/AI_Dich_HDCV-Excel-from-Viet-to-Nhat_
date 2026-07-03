@@ -1,0 +1,48 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Build outputs - keep only selected release files if explicitly force-added
+build/
+dist/*
+!dist/Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.exe
+*.pkg
+*.toc
+*.manifest
+*.spec
+!Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.spec
+
+# Local secrets and runtime config
+.env
+.env.*
+config.json
+*.key
+*api_key*
+*API_KEY*
+
+# Office temporary files
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+*.tmp
+*.bak
+
+# Logs/cache
+*.log
+.cache/
+.pytest_cache/
+
+# Large local folders
+node_modules/
+sample_preview/
+
+# Local archives/backups
+*.7z
+*.zip
+*.rar
