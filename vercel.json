@@ -1,0 +1,12 @@
+﻿{
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "dist/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/download", "dest": "/dist/Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.exe" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿# Vercel ignores for this static download page
+build/
+__pycache__/
+*.spec
+!Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.spec
