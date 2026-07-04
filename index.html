@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Excel AI Dịch Việt - Nhật V50</title>
+  <title>Excel AI Dịch Việt - Nhật V50 / Excel AI ベトナム語・日本語翻訳 V50</title>
   <style>
     :root {
       --bg: #071226;
@@ -49,6 +49,7 @@
       letter-spacing: -0.03em;
     }
     .jp { color: var(--yellow); font-size: 0.58em; white-space: nowrap; }
+    .jp-line { color: var(--yellow); display: block; margin-top: 4px; }
     .sub { color: var(--muted); font-size: 17px; line-height: 1.65; margin: 0; }
     main { padding: 30px 34px 36px; }
     .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 22px; }
@@ -59,7 +60,9 @@
       padding: 22px;
     }
     h2 { margin: 0 0 14px; font-size: 21px; }
+    h2 .jp-line { font-size: 16px; font-weight: 700; }
     ul { margin: 0; padding-left: 20px; line-height: 1.75; color: #dbeafe; }
+    li { margin-bottom: 6px; }
     .download {
       display: inline-flex;
       align-items: center;
@@ -95,47 +98,49 @@
     <header>
       <h1 class="title">
         <span>Excel AI Dịch Việt - Nhật V50</span>
-        <span class="jp">Excel AI ベトナム語・日本語翻訳</span>
+        <span class="jp">Excel AI ベトナム語・日本語翻訳 V50</span>
       </h1>
       <p class="sub">
         Trang tải app desktop Windows dùng để dịch file Excel tiếng Việt sang tiếng Nhật và xuất file <strong>_JP</strong>.
         Đây là bản phát hành V50.
+        <span class="jp-line">Windows用デスクトップアプリのダウンロードページです。Excelのベトナム語を日本語へ翻訳し、<strong>_JP</strong>ファイルとして出力します。V50版です。</span>
       </p>
     </header>
     <main>
       <div class="grid">
         <section class="box">
-          <h2>Tải app</h2>
-          <p class="small">Bấm nút dưới để tải file chạy Windows:</p>
+          <h2>Tải app <span class="jp-line">アプリをダウンロード</span></h2>
+          <p class="small">Bấm nút dưới để tải file chạy Windows:<br>下のボタンを押して、Windows用実行ファイルをダウンロードしてください。</p>
           <a class="download" href="./dist/Excel_AI_Dich_Viet_Nhat_v50_compact_company_card.exe" download>
-            ⬇ Tải Excel AI Dịch Việt - Nhật V50
+            ⬇ Tải Excel AI Dịch Việt - Nhật V50 / ダウンロード
           </a>
           <p class="small">
             Nếu trình duyệt cảnh báo file <code>.exe</code>, hãy chọn giữ lại nếu anh tin tưởng nguồn tải nội bộ này.
+            <br>ブラウザで<code>.exe</code>ファイルの警告が表示された場合は、社内配布元として信頼できる場合のみ保存してください。
           </p>
         </section>
         <section class="box">
-          <h2>Cách dùng nhanh</h2>
+          <h2>Cách dùng nhanh <span class="jp-line">簡単な使い方</span></h2>
           <ul>
-            <li>Tải file <code>.exe</code>.</li>
-            <li>Mở app trên Windows.</li>
-            <li>Chọn file Excel cần dịch.</li>
-            <li>Nhập API Key.</li>
-            <li>Bấm dịch và lấy file <code>_JP</code>.</li>
+            <li>Tải file <code>.exe</code>. / <code>.exe</code>ファイルをダウンロードします。</li>
+            <li>Mở app trên Windows. / Windowsでアプリを開きます。</li>
+            <li>Chọn file Excel cần dịch. / 翻訳したいExcelファイルを選択します。</li>
+            <li>Nhập API Key. / APIキーを入力します。</li>
+            <li>Bấm dịch và lấy file <code>_JP</code>. / 翻訳を実行し、<code>_JP</code>ファイルを取得します。</li>
           </ul>
         </section>
       </div>
       <section class="box" style="margin-top:22px">
-        <h2>Lưu ý</h2>
+        <h2>Lưu ý <span class="jp-line">注意事項</span></h2>
         <ul>
-          <li>Vercel chỉ dùng làm trang tải app, không chạy app Excel trực tiếp trên web.</li>
-          <li>App desktop cần chạy trên máy Windows có Excel/WPS phù hợp.</li>
-          <li>Không đưa API Key cá nhân lên GitHub hoặc Vercel.</li>
+          <li>Render chỉ dùng làm trang tải app, không chạy app Excel trực tiếp trên web. / Renderはアプリのダウンロードページ用であり、Web上でExcelアプリを直接実行するものではありません。</li>
+          <li>App desktop cần chạy trên máy Windows có Excel/WPS phù hợp. / デスクトップアプリは、対応するExcelまたはWPSが入ったWindows PCで実行してください。</li>
+          <li>Không đưa API Key cá nhân lên GitHub hoặc Render. / 個人のAPIキーをGitHubやRenderへアップロードしないでください。</li>
         </ul>
       </section>
     </main>
     <footer>
-      Designed by Nguyen Duy Hoa · Release V50 · Vietnam Meiwa internal support tool
+      Designed by Nguyen Duy Hoa · Release V50 · Vietnam Meiwa internal support tool / ベトナム明和社内支援ツール
     </footer>
   </div>
 </body>
